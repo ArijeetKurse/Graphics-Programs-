@@ -93,7 +93,7 @@ void rotateX(float obj[N][3], float angle)
 }
 
 // -------- MAIN --------
-void main()
+int main()
 {
     int gd = DETECT, gm;
 
@@ -128,5 +128,6 @@ void main()
     outtextxy(10,70,"Rotated X-axis");
     getch();
 
-    closegraph();
+    closegraph(ALL_WINDOWS);
+    return 0;
 }
